@@ -9,7 +9,7 @@ This project aims to develop a machine learning model for detecting sign languag
 4. Once virtual environment is installed, then go to your project folder, and then open command prompt here. 
 5. In the opened command prompt, create a new virtual environment using the command - "***python -m venv my-env***"
 6. Step 5 will create a folder called "my-env" inside your project folder. Now we have created the virtual environment. We have to activate it. To activate, type the following command in command prompt - "***.\my-env\Scripts\activate***"
-7. This will activate the environment. Now install all the project requirements by typing the following command in your command prompt - "***pip install - r requirements.txt***"
+7. This will activate the environment. Now install all the project requirements by typing the following command in your command prompt - "***pip install -r requirements.txt***"
 8. Step 7 will install the things you need to run the training and app python files.
 
 
