@@ -16,19 +16,18 @@ This project aims to develop a machine learning model for detecting sign languag
 
 ### To Collect Data
 
-If you want to collect only some sample data in range a to z, then you provide command line argument like this - 
-
-```bash
-python collectdata.py --range a-d
-```
-
-otherwise you can run the above command without --range argument as well.
-
 ```bash
 python collectdata.py
 ```
 
-The script uses your webcam to capture images. Press the corresponding  key (e.g., 'a' for 'A') to save an image in the respective directory.  Press '.' for blank images and 'Esc' to exit.
+The script uses your webcam to capture images. Instructions to add data:
+
+- Keep pressing 'a' for capture A data
+- Keep pressing 'b' for capture B data
+- ...
+- Similarly like this until 'z'. 
+- Keep pressing '.' for blank images
+- Press 'Esc' to exit the program.
 
 ### To Train a new model 
 

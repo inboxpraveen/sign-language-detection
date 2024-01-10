@@ -3,6 +3,7 @@ import os
 import argparse
 from config import *
 import splitfolders
+import shutil
 
 def create_directory(path):
     if not os.path.exists(path):
@@ -55,10 +56,11 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-splitfolders.ratio(f'{ORIGINAL_DATA_DIRECTORY}', f"{TRAINING_DATA_DIRECTORY}", ratio=(0.8, 0.2))
-
 # Removing empty directories within the specified range
 for i in range(ord(range_start), ord(range_end) + 1):
     if os.path.exists(os.path.join(directory, chr(i).upper())):
         if not os.listdir(os.path.join(directory, chr(i).upper())):
-            os.remove(os.path.join(directory, chr(i).upper()))
+            shutil.rmtree(os.path.join(directory, chr(i).upper()))
+
+splitfolders.ratio(f'{ORIGINAL_DATA_DIRECTORY}', f"{TRAINING_DATA_DIRECTORY}", ratio=(0.8, 0.2))
+
